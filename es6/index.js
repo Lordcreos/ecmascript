@@ -51,3 +51,62 @@ let team2 =['yair','vacha','norberto'];
 
 let union = [ 'leo', ...team1,...team2 ];
 console.log(union);
+
+
+//Arrow Functions, Promesas y Parámetros en objetos
+let nombre ='Leo'
+let edad = 24 
+
+//ES5
+ obj = {nombre:nombre, edad:edad};
+
+ //ES6
+ obj2 ={nombre , edad};
+ console.log(obj2);
+
+ const names =[
+     {
+        nombre :'Leo',edad :24 
+     },
+     {
+        nombre : 'Pepe', edad: 25 
+     }
+ ]
+//ES%
+ let listOfNames = names.map(function(item){
+
+    console.log(item.name);
+ })
+
+ //ES6
+
+
+let listOfNames2 = names.map(item => console.log(item.name));
+let listOfNames3 =(nombre, age, country) =>{
+    //todo su codigo aqui
+}
+
+let listOfNames4 = names =>{
+    //todo su codigo aqui 
+}
+
+const square = num => num * num;
+
+
+//promesas 
+
+const helloPromise = () => {
+    return new Promise ((resolve, reject )=>{
+        if (true){
+            resolve ('hey!!');
+        }else {
+            reject ('ups!!');
+        }
+    });
+}
+
+
+helloPromise()
+.then(response => console.log(response))
+.then (() =>console.log('hola'))
+.catch(error=>console.log(error));
