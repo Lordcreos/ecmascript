@@ -80,4 +80,4 @@ const buyIceCream = async (money) => {
     }
 }
 
-buyIceCream(600); //1. ll
+buyIceCream(600); //1. llamas a la funcion comprar helado e Ingresas el dinero
